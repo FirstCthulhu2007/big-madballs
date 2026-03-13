@@ -1,16 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, sans-serif;
-    /* Фоновая картинка */
-    background-image: url('АНЯ.jpg'); /* Укажи точное имя твоего файла */
-    background: 
-        linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), /* Черная полупрозрачная пленка сверху */
-    background-size: 100% auto; /* Ширина 100%, высота автоматически */
-    background-repeat: no-repeat; /* Не повторять */
-    background-position: top center; /* Прижать к верху и центру */
-    color: white; /* Цвет текста */
-    min-height: 100vh; /* Минимальная высота — весь экран */
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a; /* Глубокий черный цвет */
+    color: #f0f0f0; /* Светло-серый текст */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
