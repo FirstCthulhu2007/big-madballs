@@ -1,11 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, sans-serif;
-    /* Градиентный фон или можно вставить картинку */
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    min-height: 100vh; /* На всю высоту экрана */
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a; /* Глубокий черный цвет */
+    color: #f0f0f0; /* Светло-серый текст */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,15 +17,18 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 4em; /* Огромный заголовок */
+    letter-spacing: 5px; /* Разреженные буквы */
+    text-transform: uppercase; /* Заглавные буквы */
+    font-weight: 300; /* Тонкое начертание */
+    margin-bottom: 10px;
 }
 
 .artist {
-    font-size: 1.2em;
-    opacity: 0.9;
-    margin-bottom: 30px;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 40px;
 }
 
 /* Стили для стандартного плеера */
@@ -37,19 +39,20 @@ audio {
 }
 
 button {
-    background: white;
-    color: #764ba2;
-    border: none;
-    padding: 15px 40px;
+    background: transparent; /* Прозрачный фон */
+    color: #f0f0f0;
+    border: 2px solid #f0f0f0; /* Белая рамка */
+    padding: 15px 50px;
     font-size: 1.2em;
-    border-radius: 50px;
+    border-radius: 0; /* Квадратная кнопка */
     cursor: pointer;
     font-weight: bold;
-    transition: transform 0.2s;
+    transition: all 0.3s ease; /* Плавное изменение при наведении */
 }
 
 button:hover {
-    transform: scale(1.05);
+     background: #f0f0f0;
+    color: #0a0a0a; /* Меняем цвет текста при наведении */
 }
 
 .lyrics {
