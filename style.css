@@ -1,9 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #0a0a0a; /* Глубокий черный цвет */
-    color: #f0f0f0; /* Светло-серый текст */
+    font-family: system-ui, -apple-system, sans-serif;
+    /* Фоновое изображение */
+    background-image: url('АНЯ.jpeg'); /* Укажи точное имя твоего файла */
+    background: 
+        linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), /* Черная полупрозрачная пленка сверху */
+    background-size: cover; /* Растягивает картинку на весь экран */
+    background-position: center; /* Центрирует картинку */
+    background-repeat: no-repeat; /* Запрещает повторять картинку, если она маленькая */
+    color: white; /* Текст белый, чтобы был виден на темной картинке */
     min-height: 100vh;
     display: flex;
     align-items: center;
