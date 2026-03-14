@@ -104,3 +104,56 @@ button:hover {
         margin: 15px 0; /* Немного отступов */
     }
 }
+
+.volume-container {
+    margin-top: 20px; /* Отступ сверху */
+    color: white;
+    text-align: center;
+}
+
+.volume-container label {
+    display: block; /* Чтобы label был над ползунком */
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Стилизация самого ползунка */
+input[type=range] {
+    -webkit-appearance: none; /* Убираем стандартный вид в WebKit браузерах */
+    width: 100%;
+    max-width: 300px; /* Ограничиваем ширину */
+    height: 5px;
+    background: #555; /* Цвет дорожки */
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Стилизация бегунка (ползунка) для Chrome/Safari */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: white; /* Цвет бегунка */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+/* Стилизация бегунка для Firefox */
+input[type=range]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+/* Стилизация дорожки в Firefox */
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background: #555;
+    border-radius: 5px;
+}
