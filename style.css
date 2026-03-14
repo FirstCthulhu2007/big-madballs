@@ -167,3 +167,19 @@ input[type=range]::-moz-range-track {
     background: #555;
     border-radius: 5px;
 }
+
+/* Этот код сработает только в браузере Safari */
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        /* Здесь можно, например, скрыть стандартный регулятор громкости, 
+           но в твоем случае проще ничего не делать, 
+           так как Safari сам его прячет. 
+           Или можно вывести текст-подсказку для пользователей iOS */
+        .safari-hint {
+            display: block;
+            color: #888;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+}
