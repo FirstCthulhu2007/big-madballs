@@ -90,11 +90,6 @@ button:hover {
         height: 24px;
     }
 
-    .volume-container label {
-        font-size: 14px; /* Читаемый текст */
-    }
-}
-
     h1 {
         font-size: 1.8em; /* Уменьшаем заголовок */
     }
