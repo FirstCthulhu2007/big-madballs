@@ -1,18 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('myPlayer');
+    let isPlaying = false; // флаг, чтобы не запускать повторно
 
-    // Функция запуска с проверкой
+    // Функция запуска музыки
     function playMusic() {
-        if (audio && audio.paused) {
-            audio.play().catch(error => {
-                console.log('Не удалось запустить:', error);
-            });
+        if (audio && !isPlaying) {
+            audio.play()
+                .then(() => {
+                    isPlaying = true;
+                    console.log('Музыка запущена');
+                })
+                .catch(error => {
+                    console.log('Не удалось запустить музыку:', error);
+                });
         }
     }
 
-    // Попытка автозапуска
+    // Пытаемся авто-запустить (вдруг браузер разрешит)
     audio.play().catch(() => {
-        // Если не вышло — ждём клика
-        document.body.addEventListener('click', playMusic, { once: true });
+        // Автозапуск не сработал — ждём клика
+        console.log('Ждём клика пользователя');
     });
+
+    // Обработчик клика по всему документу
+    document.body.addEventListener('click', function() {
+        playMusic();
+    }, { once: true }); // { once: true } — обработчик сработает только один раз
 });
