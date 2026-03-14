@@ -80,6 +80,21 @@ button:hover {
         padding: 15px; /* Уменьшаем отступы по краям */
     }
 
+     input[type=range] {
+        max-width: 250px; /* Немного уже на телефоне */
+        height: 6px; /* Чуть выше для удобства */
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        width: 24px; /* Крупный бегунок для пальца */
+        height: 24px;
+    }
+
+    .volume-container label {
+        font-size: 14px; /* Читаемый текст */
+    }
+}
+
     h1 {
         font-size: 1.8em; /* Уменьшаем заголовок */
     }
