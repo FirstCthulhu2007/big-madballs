@@ -30,6 +30,7 @@ window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Находим наши элементы на странице
     const audio = document.getElementById('myPlayer');
+  const playButton = document.getElementById('playButton');
     const volumeControl = document.getElementById('volumeControl');
 
     // Проверяем, есть ли вообще такие элементы на странице (на всякий случай)
