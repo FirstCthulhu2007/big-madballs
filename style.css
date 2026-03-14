@@ -51,18 +51,6 @@ audio {
     border-radius: 30px;
 }
 
-button {
-    background: transparent; /* Прозрачный фон */
-    color: #f0f0f0;
-    border: 2px solid #f0f0f0; /* Белая рамка */
-    padding: 15px 50px;
-    font-size: 1.2em;
-    border-radius: 0; /* Квадратная кнопка */
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Плавное изменение при наведении */
-}
-
 button:hover {
      background: #f0f0f0;
     color: #0a0a0a; /* Меняем цвет текста при наведении */
